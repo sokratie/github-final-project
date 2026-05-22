@@ -1,1 +1,1 @@
-Все вклады, отчеты об ошибках, исправления ошибок, улучшения документации, усовершенствования и идеи приветствуются.
+All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
