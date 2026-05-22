@@ -1,28 +1,28 @@
-#!/bin/bash
-   # Этот скрипт вычисляет простые проценты, заданные основной суммой,
-   # годовой процентной ставкой и временным периодом в годах.
+ #!/bin/bash
+   # This script calculates simple interest given principal,
+   # annual rate of interest and time period in years.
 
-   # Не используйте это в производственной среде. Только для примера.
+   # Do not use this in production. Sample purpose only.
 
-   # Автор: Upkar Lidder (IBM)
-   # Дополнительные авторы:
-   # <ваше имя пользователя на GitHub>
+   # Author: Upkar Lidder (IBM)
+   # Additional Authors:
+   # <your GitHub username>
 
-   # Входные данные:
-   # p, основная сумма
-   # t, временной период в годах
-   # r, годовая процентная ставка
+   # Input:
+   # p, principal amount
+   # t, time period in years
+   # r, annual rate of interest
 
-   # Выходные данные:
-   # простые проценты = p*t*r
+   # Output:
+   # simple interest = p*t*r
 
-   echo "Введите основную сумму:"
+   echo "Enter the principal:"
    read p
-   echo "Введите временной период в годах:"
+   echo "Enter time period in years:"
    read t
-   echo "Введите процентную ставку в год:"
+   echo "Enter rate of interest per year:"
    read r
 
    s=$(echo "scale=2; $p * $t * $r / 100" | bc)
-   echo "Простые проценты составляют: "
+   echo "The simple interest is: "
    echo $s
